@@ -1,0 +1,15 @@
+# ============================================
+# Custom extensions to .bashrc
+# ============================================
+#
+# Usage:
+# 1. Save this file as ~/.bashrc_ext
+# 2. Add this to your ~/.bashrc:
+#    if [ -f ~/.bashrc_ext ]; then
+#        source ~/.bashrc_ext
+#    fi
+#
+
+# History settings
+shopt -s histverify
+shopt -s histreedit
