@@ -1,0 +1,21 @@
+# ============================================
+# Custom extensions to .bashrc
+# ============================================
+#
+# Usage:
+# 1. Save this file as ~/.bashrc_local
+# 2. Add this to your ~/.bashrc:
+#    if [ -f ~/.bashrc_local ]; then
+#        source ~/.bashrc_local
+#    fi
+#
+
+# History settings
+shopt -s histverify
+shopt -s histreedit
+
+# Aliases for nvim
+alias vim='nvim'
+
+# Alias to display all files with ll
+alias ll='ls -la --color=auto'

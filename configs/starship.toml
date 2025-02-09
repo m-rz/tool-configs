@@ -1,0 +1,48 @@
+[directory]
+truncate_to_repo = false
+style = "bold blue"
+repo_root_style = "bold white" 
+
+[character]
+# error_symbol = "[X❯](bold red)"
+
+[battery]
+full_symbol = "• "
+charging_symbol = "⇡ "
+discharging_symbol = "⇣ "
+unknown_symbol = "❓ "
+empty_symbol = "❗ "
+
+[git_branch]
+# symbol = "🌿 "
+
+[line_break]
+# disabled = true
+
+[status]
+disabled = true
+
+[python]
+version_format = "v${major}.${minor}"
+
+[shlvl]
+# disabled = false
+symbol = "↕"
+
+[sudo]
+disabled = true
+format = '[$symbol]($style)'
+symbol = '🛡️'
+
+[erlang]
+symbol = "ⓔ "
+
+[nodejs]
+symbol = "[⬢](bold green) "
+
+[pulumi]
+symbol = "🧊 "
+
+[typst]
+symbol = "t "
+
