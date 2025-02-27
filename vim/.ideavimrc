@@ -17,6 +17,9 @@ sethandler n:vim i:ide
 " Use system clipboard
 set clipboard+=unnamedplus
 
+" Use ideajoin to join lines in a smart way
+set ideajoin
+
 " Automatically reload .ideavimrc when saving
 autocmd BufWritePost .ideavimrc source $HOME/.ideavimrc
 
