@@ -48,7 +48,6 @@ if exists('*plug#begin')
     Plug 'tpope/vim-commentary'                     " Commenting (gcc, gc)
     Plug 'tpope/vim-surround'                       " Surroundings (ysiw', cs', etc.)
     Plug 'machakann/vim-highlightedyank'            " Highlight yanked text
-    Plug 'easymotion/vim-easymotion'                " Fast navigation
     
     call plug#end()
 else

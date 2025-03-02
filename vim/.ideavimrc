@@ -30,4 +30,7 @@ source ~/.vimrc
 Plug 'tpope/vim-commentary'                     " Commenting (gcc, gc)
 Plug 'tpope/vim-surround'                       " Surroundings (ysiw', cs', etc.)
 Plug 'machakann/vim-highlightedyank'            " Highlight yanked text
-Plug 'easymotion/vim-easymotion'                " Fast navigation
+Plug 'vim-scripts/argtextobj.vim'               " Argument text object (vaa, cia, daa, etc.)
+Plug 'dbakker/vim-paragraph-motion'             " Consider whitespace lines for paragraph motion
+Plug 'michaeljsmith/vim-indent-object'          " Indent text object (ai, ii, aI)
+
