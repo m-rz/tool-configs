@@ -40,16 +40,48 @@ set cursorline                " Highlight current line
 color habamax                 " Set color scheme
 
 " ==============================
-" Plugins
+" IdeaVim
 " ==============================
-if exists('*plug#begin')
-    call plug#begin()
+if has('ide')
 
-    Plug 'tpope/vim-commentary'                     " Commenting (gcc, gc)
-    Plug 'tpope/vim-surround'                       " Surroundings (ysiw', cs', etc.)
-    Plug 'machakann/vim-highlightedyank'            " Highlight yanked text
-    
-    call plug#end()
-else
-    autocmd VimEnter * echon "vim-plug not detected. Skipping plugin setup." | redraw
+    " Don't use Ex mode, use Q for formatting.
+    map Q gq
+
+    "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+    "" Map \r to the Reformat Code action
+    "map \r <Action>(ReformatCode)
+
+    "" Map <leader>d to start debug
+    "map <leader>d <Action>(Debug)
+
+    "" Map \b to toggle the breakpoint on the current line
+    "map \b <Action>(ToggleLineBreakpoint)
+
+    " Normal mode = Vim, Insert mode = IDE
+    sethandler n:vim i:ide
+
+    " Use system clipboard
+    set clipboard+=unnamedplus
+
+    " Use ideajoin to join lines in a smart way
+    set ideajoin
+
+    " Automatically reload .ideavimrc when saving
+    autocmd BufWritePost .ideavimrc source $HOME/.ideavimrc
+
 endif
+
+" ==============================
+" Plugins (Vim + IdeaVim common)
+" ==============================
+call plug#begin()
+
+Plug 'tpope/vim-commentary'                     " Commenting (gcc, gc)
+Plug 'tpope/vim-surround'                       " Surroundings (ysiw', cs', etc.)
+Plug 'machakann/vim-highlightedyank'            " Highlight yanked text
+Plug 'vim-scripts/argtextobj.vim'               " Argument text object (vaa, cia, daa, etc.)
+Plug 'dbakker/vim-paragraph-motion'             " Consider whitespace lines for paragraph motion
+Plug 'michaeljsmith/vim-indent-object'          " Indent text object (ai, ii, aI)
+
+call plug#end()
+
