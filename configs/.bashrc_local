@@ -3,10 +3,10 @@
 # ============================================
 #
 # Usage:
-# 1. Save this file as ~/.bashrc_ext
+# 1. Save this file as ~/.bashrc_local
 # 2. Add this to your ~/.bashrc:
-#    if [ -f ~/.bashrc_ext ]; then
-#        source ~/.bashrc_ext
+#    if [ -f ~/.bashrc_local ]; then
+#        source ~/.bashrc_local
 #    fi
 #
 

@@ -1,0 +1,12 @@
+- defaults:
+    link:
+      relink: true
+
+- link:
+    ~/.vimrc: configs/.vimrc
+    ~/.ideavimrc: configs/.ideavimrc
+    ~/.bashrc_local: configs/.bashrc_local
+    ~/.config/starship.toml: configs/starship.toml
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
