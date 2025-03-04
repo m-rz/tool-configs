@@ -72,7 +72,28 @@ if has('ide')
 endif
 
 " ==============================
-" Plugins (Vim + IdeaVim common)
+" NeoVim
+" ==============================
+if has('nvim')
+    if has('wsl')
+        set clipboard+=unnamedplus
+        let g:clipboard = {
+                \   'name': 'WslClipboard',
+                \   'copy': {
+                \      '+': 'clip.exe',
+                \      '*': 'clip.exe',
+                \    },
+                \   'paste': {
+                \      '+': 'powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+                \      '*': 'powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+                \   },
+                \   'cache_enabled': 0,
+                \ }
+    endif
+endif
+
+" ==============================
+" Plugins (Vim/NeoVim + IdeaVim common)
 " ==============================
 call plug#begin()
 
