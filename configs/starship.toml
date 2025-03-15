@@ -33,3 +33,16 @@ symbol = "↕"
 disabled = true
 format = '[$symbol]($style)'
 symbol = '🛡️'
+
+[erlang]
+symbol = "ⓔ "
+
+[nodejs]
+symbol = "[⬢](bold green) "
+
+[pulumi]
+symbol = "🧊 "
+
+[typst]
+symbol = "t "
+
