@@ -66,6 +66,9 @@ if has('ide')
     " Use ideajoin to join lines in a smart way
     set ideajoin
 
+    " Do not use IdeaVim inside commit tool windows or other dialogs
+    set ideavimsupport=
+
     " Automatically reload .ideavimrc when saving
     autocmd BufWritePost .ideavimrc source $HOME/.ideavimrc
 
