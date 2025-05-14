@@ -1,4 +1,4 @@
-FROM quay.io/toolbx/ubuntu-toolbox:24.04
+FROM ghcr.io/ublue-os/ubuntu-toolbox:latest
 
 LABEL default_tag=distrobox.local/spotify
 

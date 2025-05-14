@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora-toolbox:41
+FROM ghcr.io/ublue-os/fedora-toolbox:latest
 
 LABEL default_tag=distrobox.local/chrome
 
