@@ -110,3 +110,11 @@ Plug 'michaeljsmith/vim-indent-object'          " Indent text object (ai, ii, aI
 
 call plug#end()
 
+" ==============================
+" Key bindings
+" ==============================
+" Prevent x, X, Del from overwriting clipboard
+noremap x "_x
+noremap X "_X
+noremap <Del> "_x
+
