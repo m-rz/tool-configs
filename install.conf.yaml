@@ -9,6 +9,7 @@
     ~/.bashrc_local: configs/.bashrc_local
     ~/.config/starship.toml: configs/starship.toml
     ~/.byobu/.tmux.conf: configs/.tmux.conf
+    ~/.byobu/status: configs/status
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
