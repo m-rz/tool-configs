@@ -10,6 +10,7 @@
     ~/.config/starship.toml: configs/starship.toml
     ~/.config/byobu/.tmux.conf: configs/.tmux.conf
     ~/.config/byobu/status: configs/status
+    ~/.config/byobu/keybindings.tmux: configs/keybindings.tmux
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
