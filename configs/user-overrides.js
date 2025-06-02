@@ -63,3 +63,12 @@ user_pref("security.OCSP.require", false);
  * e.g., https://duckduckgo.com/?kae=d&kl=pl-pl&kp=-2&kn=1&k1=-1&kaj=m&kak=-1&kax=-1&kaq=-1&kap=-1&kao=-1&k18=1&kad=pl_PL&q=%s ***/
 user_pref("browser.urlbar.update2.engineAliasRefresh", true);
 
+/* Configure hardware-accelerated video decoding ***/
+user_pref("gfx.webrender.all", true);
+user_pref("dom.webgpu.enabled", true);
+user_pref("layers.gpu-process.enabled", true);
+//user_pref("layers.mlgpu.enabled", true);
+user_pref("media.gpu-process-decoder", true);
+user_pref("media.ffmpeg.vaapi.enabled", true);
+user_pref("media.hardware-video-decoding.force-enabled", true);
+user_pref("widget.dmabuf.force-enabled", true);
