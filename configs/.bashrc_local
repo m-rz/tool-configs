@@ -15,7 +15,9 @@ shopt -s histverify
 shopt -s histreedit
 
 # Aliases for nvim
-alias vim='nvim'
+if command -v nvim >/dev/null 2>&1; then
+    alias vim='nvim'
+fi
 
 # Alias to display all files with ll
 alias ll='ls -la --color=auto'
