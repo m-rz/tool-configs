@@ -1,0 +1,17 @@
+# Generated with: dconf dump /org/gnome/Ptyxis/ 
+[/]
+cursor-shape='block'
+default-columns=uint32 140
+default-rows=uint32 50
+font-name='JetBrains Mono 12'
+interface-style='dark'
+use-system-font=false
+window-size=(uint32 190, uint32 51)
+
+[Profiles/2871e8027773ae74d6c87a5f659bbc74]
+bold-is-bright=false
+cell-height-scale=1.0
+custom-command='/usr/bin/bash -i -l byobu new-session'
+label='main'
+palette='Vs Code'
+use-custom-command=true
