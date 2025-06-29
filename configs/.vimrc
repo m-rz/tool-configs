@@ -98,6 +98,7 @@ endif
 
 " ==============================
 " Plugins (Vim/NeoVim + IdeaVim common)
+" Refer to: https://github.com/junegunn/vim-plug#installation
 " ==============================
 call plug#begin()
 
