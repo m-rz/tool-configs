@@ -118,3 +118,16 @@ noremap x "_x
 noremap X "_X
 noremap <Del> "_x
 
+" Prevent d, c, s, C, S, D from overwriting clipboard, but yank to a scratch register
+nnoremap d "zd
+nnoremap c "zc
+nnoremap s "zs
+nnoremap C "zC
+nnoremap S "zS
+nnoremap D "zD
+vnoremap d "zd
+vnoremap c "zc
+vnoremap s "zs
+vnoremap C "zC
+vnoremap S "zS
+vnoremap D "zD
