@@ -63,6 +63,11 @@ user_pref("security.OCSP.require", false);
  * e.g., https://duckduckgo.com/?kae=d&kl=pl-pl&kp=-2&kn=1&k1=-1&kaj=m&kak=-1&kax=-1&kaq=-1&kap=-1&kao=-1&k18=1&kad=pl_PL&q=%s ***/
 user_pref("browser.urlbar.update2.engineAliasRefresh", true);
 
+/* 2813: set Session Restore to clear on shutdown (if 2810 is true) [FF34+]
+ * [NOTE] Not needed if Session Restore is not used (0102) or it is already cleared with history (2811+)
+ * [NOTE] If true, this prevents resuming from crashes (also see 5008) ***/
+user_pref("privacy.clearOnShutdown.openWindows", true);
+
 /* Configure hardware-accelerated video decoding ***/
 user_pref("gfx.webrender.all", true);
 user_pref("dom.webgpu.enabled", true);
