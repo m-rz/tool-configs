@@ -68,6 +68,10 @@ user_pref("browser.urlbar.update2.engineAliasRefresh", true);
  * [NOTE] If true, this prevents resuming from crashes (also see 5008) ***/
 user_pref("privacy.clearOnShutdown.openWindows", true);
 
+/* 5008: disable resuming session from crash
+ * [TEST] about:crashparent ***/
+user_pref("browser.sessionstore.resume_from_crash", false);
+
 /* Configure hardware-accelerated video decoding ***/
 user_pref("gfx.webrender.all", true);
 user_pref("dom.webgpu.enabled", true);
