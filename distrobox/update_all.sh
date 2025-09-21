@@ -12,10 +12,10 @@ set -e
 docker build -t distrobox.local/chrome -f chrome.Dockerfile .
 
 # Build the local Firefox Docker image using firefox.Dockerfile
-docker build -t distrobox.local/firefox -f firefox.Dockerfile .
+#docker build -t distrobox.local/firefox -f firefox.Dockerfile .
 
 # Build the local Firefox (hardware-accelerated) Docker image using firefox_hw.Dockerfile
-docker build -t distrobox.local/firefox_hw -f firefox_hw.Dockerfile .
+#docker build -t distrobox.local/firefox_hw -f firefox_hw.Dockerfile .
 
 # Build the local Spotify Docker image using spotify.Dockerfile
 #docker build -t distrobox.local/spotify -f spotify.Dockerfile .
