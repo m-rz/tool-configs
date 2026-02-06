@@ -16,6 +16,7 @@ flatpak "org.nomacs.ImageLounge"
 flatpak "org.pulseaudio.pavucontrol"
 flatpak "org.qbittorrent.qBittorrent"
 flatpak "com.brave.Browser"
+flatpak "io.github.ungoogled_software.ungoogled_chromium"
 
 brew "btop"
 brew "byobu"
@@ -23,3 +24,5 @@ brew "neovim"
 brew "poetry"
 brew "resticprofile"
 brew "unzip"
+brew "zellij"
+

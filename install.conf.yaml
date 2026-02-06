@@ -11,6 +11,7 @@
     ~/.config/byobu/.tmux.conf: configs/.tmux.conf
     ~/.config/byobu/status: configs/status
     ~/.config/byobu/keybindings.tmux: configs/keybindings.tmux
+    ~/.config/zellij/config.kdl: configs/config.kdl
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
