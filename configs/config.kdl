@@ -264,7 +264,7 @@ web_client {
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-theme "nord"
+theme "ao"
  
 // Choose the base input mode of zellij.
 // Default: normal
@@ -392,7 +392,7 @@ scrollback_editor "/usr/bin/env nvim"
 //   - true (default)
 //   - false
 // 
-// session_serialization false
+session_serialization false
  
 // Whether pane viewports are serialized along with the session, default is false
 // Options:
