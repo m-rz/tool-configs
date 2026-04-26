@@ -6,7 +6,9 @@
     ~/.vimrc: configs/.vimrc
     ~/.config/nvim/init.vim: configs/init.vim
     ~/.ideavimrc: configs/.ideavimrc
-    ~/.bashrc_local: configs/.bashrc_local
+    ~/.bashrc.d/01_local.rc:
+        create: true
+        path: configs/.bashrc_local
     ~/.config/starship.toml: configs/starship.toml
     ~/.config/byobu/.tmux.conf: configs/.tmux.conf
     ~/.config/byobu/status: configs/status

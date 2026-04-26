@@ -1,14 +1,6 @@
 # ============================================
 # Custom extensions to .bashrc
 # ============================================
-#
-# Usage:
-# 1. Save this file as ~/.bashrc_local
-# 2. Add this to your ~/.bashrc:
-#    if [ -f ~/.bashrc_local ]; then
-#        source ~/.bashrc_local
-#    fi
-#
 
 # History settings
 shopt -s histverify
